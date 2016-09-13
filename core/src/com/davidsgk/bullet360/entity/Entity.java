@@ -27,6 +27,14 @@ public abstract class Entity {
         return pos;
     }
 
+    public void setPosition(Vector2 position){
+        this.pos = position;
+    }
+
+    public void setPosition(float x, float y){
+        pos.set(x, y);
+    }
+
     public void setDirection(float x, float y){
         direction.set(x, y);
         direction.scl(Gdx.graphics.getDeltaTime()); //maintain constant "speed" of game

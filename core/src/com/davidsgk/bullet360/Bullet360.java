@@ -9,7 +9,7 @@ import com.davidsgk.bullet360.screen.ScreenManager;
 
 public class Bullet360 extends ApplicationAdapter {
 
-	public static int WIDTH = 1920, HEIGHT = 1080;
+	public static int WIDTH = 960, HEIGHT = 540;
 	private SpriteBatch batch;
 	
 	@Override
@@ -26,7 +26,7 @@ public class Bullet360 extends ApplicationAdapter {
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(0, 0, 0, 1);
+		Gdx.gl.glClearColor(0.5f, 0.5f, 0.5f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         if(ScreenManager.getCurrentScreen() != null)

@@ -9,6 +9,7 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
         config.width = Bullet360.WIDTH;
         config.height = Bullet360.HEIGHT;
+		config.resizable = false;
 		new LwjglApplication(new Bullet360(), config);
 	}
 }

@@ -21,7 +21,7 @@ public class GameScreen extends Screen{
     @Override
     public void create() {
         camera = new OrthoCamera();
-        entityManager = new EntityManager(100, camera);
+        entityManager = new EntityManager(0, camera);
         debugRenderer = new ShapeRenderer();
     }
 
